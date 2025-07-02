@@ -72,3 +72,8 @@ footer {
   border-top: 1px solid #333;
 }
 
+.thumbnail {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
