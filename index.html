@@ -17,12 +17,6 @@
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
-
-    <!-- Dark mode toggle switch -->
-  <label class="switch" title="Toggle Dark/Light Mode">
-    <input type="checkbox" id="mode-toggle" />
-    <span class="slider round"></span>
-  </label>
   </header>
 
   <main>
@@ -66,26 +60,6 @@
   <footer>
     <p>© 2025 Lara Oyku Sancar</p>
   </footer>
-
-  <script>
-  const toggle = document.getElementById('mode-toggle');
-
-  // On toggle change, switch modes
-  toggle.addEventListener('change', () => {
-    if (toggle.checked) {
-      document.body.classList.add('light-mode');
-      document.body.classList.remove('dark-mode');
-    } else {
-      document.body.classList.add('dark-mode');
-      document.body.classList.remove('light-mode');
-    }
-  });
-
-  // Set default mode to dark on page load
-  window.onload = () => {
-    document.body.classList.add('dark-mode');
-    toggle.checked = false;
-  };
-</script>
+  
 </body>
 </html>
