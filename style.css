@@ -72,3 +72,88 @@ footer {
   border-top: 1px solid #333;
 }
 
+/* Toggle Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode .project-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.light-mode header {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+body.light-mode .project-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+body.light-mode a {
+  color: #0066cc;
+}
+
+body.dark-mode a {
+  color: #00ffff;
+}
+
