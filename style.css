@@ -1,62 +1,77 @@
-/* Reset some default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Dark Mode Developer Style */
 
 body {
-  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Courier New', monospace;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #007acc;
-  color: white;
-  padding: 20px 0;
+  background-color: #1e1e1e;
+  padding: 30px 20px;
   text-align: center;
-  margin-bottom: 30px;
-  border-radius: 8px;
+  border-bottom: 1px solid #333;
 }
 
 header h1 {
   margin-bottom: 10px;
+  font-size: 2em;
+  color: #00ffff;
 }
 
-header nav a {
-  color: white;
+header p {
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+nav a {
+  color: #00ffff;
+  margin: 0 12px;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: bold;
 }
 
-header nav a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-main section {
-  margin-bottom: 40px;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-main section h2 {
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+  color: #ffffff;
+}
+
+a {
+  color: #00ffff;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
   margin-bottom: 15px;
-  color: #007acc;
 }
 
 footer {
   text-align: center;
-  padding: 15px 0;
+  padding: 20px;
+  font-size: 0.9em;
   color: #777;
-  font-size: 0.9rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #333;
 }
+
 
